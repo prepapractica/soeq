@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduMath 2x2 - Plataforma Interactiva de Sistemas de Ecuaciones</title>
+    <title>PrepaPractica 2x2 - Plataforma Interactiva de Sistemas de Ecuaciones</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -74,7 +74,7 @@
                 <!-- Student Name Input -->
                 <div class="flex items-center bg-slate-950 border border-slate-700 rounded-lg px-2.5 py-1 focus-within:border-blue-500 transition shadow-inner">
                     <i class="fa-solid fa-user-graduate text-slate-400 text-xs mr-2"></i>
-                    <input type="text" id="studentName" value="Estudiante EduMath" 
+                    <input type="text" id="studentName" value="Estudiante PrepaPractica" 
                            class="bg-transparent text-xs font-medium text-slate-200 outline-none w-28 sm:w-36" 
                            placeholder="Tu nombre..."
                            title="Nombre del Estudiante">
@@ -505,7 +505,7 @@
                 <!-- PDF Sheet Header -->
                 <div class="border-b-2 border-blue-600 pb-3 flex justify-between items-start">
                     <div>
-                        <h2 class="text-xl font-extrabold text-blue-900">EduMath 2x2 Interactive</h2>
+                        <h2 class="text-xl font-extrabold text-blue-900">PrepaPráctica 2x2 Interactive</h2>
                         <p class="text-[11px] text-slate-500">Reporte Individual de Evaluación Formativa y Competencias Matemáticas</p>
                     </div>
                     <div class="text-right text-[11px] text-slate-500">
@@ -516,7 +516,7 @@
 
                 <!-- Student Profile Banner -->
                 <div class="bg-blue-50 border border-blue-200 rounded-lg p-3 grid grid-cols-2 gap-2 text-[11px]">
-                    <p><strong class="text-blue-900">Estudiante:</strong> <span id="pdfStudentName" class="font-bold text-slate-800">Estudiante EduMath</span></p>
+                    <p><strong class="text-blue-900">Estudiante:</strong> <span id="pdfStudentName" class="font-bold text-slate-800">Estudiante PrepaPráctica</span></p>
                     <p><strong class="text-blue-900">Ejercicios Solucionados:</strong> <span id="pdfTotalSolved" class="font-bold text-slate-800">0</span></p>
                     <p><strong class="text-blue-900">Puntos XP Ganados:</strong> <span id="pdfXP" class="font-bold text-slate-800">0 XP</span></p>
                     <p><strong class="text-blue-900">Racha Máxima:</strong> <span id="pdfStreak" class="font-bold text-slate-800">0</span></p>
@@ -548,8 +548,7 @@
 
                 <!-- Teacher Observations & Signature -->
                 <div class="pt-4 border-t border-slate-200 text-[10px] text-slate-500 flex justify-between items-center">
-                    <p>EduMath Platform &copy; 2026 - Evaluación de Ciencias y Matemáticas</p>
-                    <p>Firma / Sello del Docente: _______________________</p>
+                    <p>PrepaPráctica Platform &copy; 2026 - Evaluación de Ciencias y Matemáticas</p>
                 </div>
             </div>
 
@@ -1530,7 +1529,7 @@
 
             const opt = {
                 margin:       [0.4, 0.4, 0.4, 0.4],
-                filename:     `EduMath_Reporte_${studentName}.pdf`,
+                filename:     `PrepaPractica_Reporte_${studentName}.pdf`,
                 image:        { type: 'jpeg', quality: 0.98 },
                 html2canvas:  { scale: 2, useCORS: true },
                 jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
